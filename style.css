@@ -47,3 +47,63 @@ header nav a {
 .main-nav {
   justify-self: start;
 }
+
+.content-block-a {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-template-rows: 25% 25% 50%;
+  column-gap: 5%;
+  text-align: center;
+  background-color: burlywood;
+}
+
+.content-block-a h1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  margin-top: 5%;
+}
+
+.content-block-a p {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  margin: 5%;
+}
+
+.content-block-a .content {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: end;
+  text-align: start;
+}
+
+.content-block-a .blockA,
+.blockB {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  padding: 10px;
+  color: white;
+  border-radius: 16px;
+  text-decoration: none;
+}
+
+.content-block-a .blockA {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background-color: #8cc8dc;
+}
+
+.content-block-a .blockB {
+  grid-column-start: 4;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  background-color: #f5e093;
+}
