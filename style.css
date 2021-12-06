@@ -15,11 +15,10 @@ header {
   background-image: url("./images/header.jpg");
 }
 
-header .test {
+header svg {
   display: block;
-  bottom: -10%;
-  position: relative;
-  background-color: blue;
+  position: absolute;
+  bottom: 20%;
 }
 
 header h1 {
@@ -53,8 +52,9 @@ header nav a {
   grid-template-columns: repeat(5, 20%);
   grid-template-rows: 25% 25% 50%;
   column-gap: 5%;
+  padding: 5%;
   text-align: center;
-  background-color: burlywood;
+  border: 1px solid black;
 }
 
 .content-block-a h1 {
