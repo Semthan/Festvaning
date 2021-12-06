@@ -126,17 +126,18 @@ svg {
   flex-wrap: wrap;
 }
 
-.content-block-b .card {
-  width: 33%;
+.content-block-b a {
+  width: 33.3%;
+  text-decoration: none;
 }
 
 .content-block-b img {
   width: 100%;
 }
 
-.content-block-b h3,
-.content-block-b p {
-  padding: 20px;
+.content-block-b .content {
+  color: black;
+  padding: 50px;
 }
 
 .content-block-b h3 {
