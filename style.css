@@ -15,7 +15,7 @@ header {
   background-image: url("./images/header.jpg");
 }
 
-header > svg {
+header .test {
   display: block;
   bottom: -10%;
   position: relative;
@@ -235,4 +235,16 @@ footer div p {
 
 footer div h5 {
   font-size: 1.5rem;
+}
+
+footer .wave {
+  position: relative;
+  z-index: 1;
+  background-color: #0c3c68;
+}
+footer .wave--bottom {
+  bottom: 0;
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
