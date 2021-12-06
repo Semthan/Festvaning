@@ -153,8 +153,41 @@ footer .block-a {
   background-color: #0c3c68;
 }
 
+footer .menu-a,
+footer .menu-b {
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
+  margin: 0 120px 0 0;
+  list-style-type: none;
+}
+
+footer .menu-a a,
+footer .menu-b a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer .menu-a li {
+  margin: 0 0 10px 0;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+footer .menu-b {
+  margin: 25px 0 0 0;
+  padding: 25px 0 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+footer .menu-b li {
+  font-size: 1.375rem;
+  line-height: 1.3;
+  margin: 0 0 10px 0;
+}
+
 footer .news-letter {
   width: 50%;
+  height: 60%;
   border-radius: 20px;
   background-color: rgba(0, 0, 0, 0.2);
 }
