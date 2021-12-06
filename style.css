@@ -142,6 +142,7 @@ header nav a {
 }
 
 footer {
+  list-style-type: none;
   border: 1px solid black;
 }
 
@@ -155,9 +156,7 @@ footer .block-a {
 
 footer .menu-a,
 footer .menu-b {
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.2); */
   margin: 0 120px 0 0;
-  list-style-type: none;
 }
 
 footer .menu-a a,
@@ -233,10 +232,6 @@ footer div p {
   margin: 10px 0 0 0;
 }
 
-footer div h5 {
-  font-size: 1.5rem;
-}
-
 footer .wave {
   position: relative;
   z-index: 1;
@@ -247,4 +242,23 @@ footer .wave--bottom {
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+
+footer .block-b {
+  display: flex;
+  align-items: center;
+  padding: 50px 10.41%;
+}
+
+footer div h5 {
+  font-size: 1.5rem;
+}
+
+footer .social-media a {
+  text-decoration: none;
+  margin: 0 0 0 25px;
+}
+
+footer .logo {
+  margin: 0 0 0 auto;
 }
