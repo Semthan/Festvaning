@@ -119,6 +119,7 @@ svg {
 
 .content-block-b {
   text-align: center;
+  overflow: hidden;
 }
 
 .content-block-b .cards {
@@ -131,8 +132,16 @@ svg {
   text-decoration: none;
 }
 
+.cards .card {
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .content-block-b img {
   width: 100%;
+  height: 100%;
+
+  transition: transform 1s ease;
 }
 
 .content-block-b .content {
@@ -149,6 +158,10 @@ svg {
   font-weight: 300;
   line-height: 1.5;
   font-size: 1.125rem;
+}
+
+.cards a:hover img {
+  transform: scale(1.05);
 }
 
 footer {
