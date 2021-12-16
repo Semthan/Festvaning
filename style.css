@@ -114,6 +114,10 @@ svg {
   background-color: #0c3c68;
 }
 
+.blockB {
+  background-color: #8cc8dc;
+}
+
 .blocks {
   display: flex;
   justify-content: center;
