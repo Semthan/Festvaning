@@ -215,6 +215,13 @@ svg {
   overflow: hidden;
 }
 
+.content-block-b h2 {
+  font-size: 3.625rem;
+  font-family: "Albra-Semi";
+  line-height: 1.1;
+  margin: 60px 0;
+}
+
 .content-block-b .cards {
   display: flex;
   flex-wrap: wrap;
@@ -238,7 +245,7 @@ svg {
 
 .content-block-b .content {
   color: black;
-  padding: 30px;
+  padding: 8.5% 12.6% 10.5%;
 }
 
 .content-block-b h3 {
