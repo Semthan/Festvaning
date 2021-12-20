@@ -32,6 +32,12 @@ header {
   text-decoration: none;
 }
 
+.main-nav a:hover,
+.sub-nav a:hover {
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+
 header h1 {
   grid-column-start: 2;
   grid-column-end: 3;
