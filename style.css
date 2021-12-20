@@ -278,6 +278,7 @@ svg {
   align-items: center;
   padding: 32px;
   width: 200px;
+  opacity: 0.9;
   border-radius: 16px;
   text-decoration: none;
   background-color: #8cc8dc;
@@ -285,6 +286,12 @@ svg {
 
 .blockB {
   background-color: #f5e093;
+}
+
+.blockA:hover,
+.blockB:hover {
+  opacity: 1;
+  transform: scale(0.96, 0.96);
 }
 
 .blockA > h4,
