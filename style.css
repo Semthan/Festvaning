@@ -546,3 +546,11 @@ footer footer .social-media a {
 footer .logo {
   margin: 0 0 0 auto;
 }
+
+@media only screen and (min-width: 1440px) {
+  svg {
+    display: block;
+    position: absolute;
+    bottom: 11%;
+  }
+}
