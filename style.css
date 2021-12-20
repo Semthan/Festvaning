@@ -291,6 +291,8 @@ svg {
 .blockA:hover,
 .blockB:hover {
   opacity: 1;
+  -webkit-transform: scale(0.96, 0.96);
+  -ms-transform: scale(0.96, 0.96);
   transform: scale(0.96, 0.96);
 }
 
@@ -381,11 +383,14 @@ svg {
 }
 
 .cards a:hover img {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
 
 .cards a:hover h3 {
   color: #0c3c68;
+  -webkit-transform: translate3d(-10px, 0, 0);
   transform: translate3d(-10px, 0, 0);
 }
 
@@ -505,6 +510,8 @@ footer button {
 }
 
 footer button:hover {
+  -webkit-transform: scale(0.96, 0.96);
+  -ms-transform: scale(0.96, 0.96);
   transform: scale(0.96, 0.96);
 }
 
