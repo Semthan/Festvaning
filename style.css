@@ -402,14 +402,15 @@ footer {
   color: whitesmoke;
   list-style-type: none;
   border: 1px solid black;
+  background-color: #0c3c68;
 }
 
 footer .block-a {
   display: flex;
   justify-content: center;
+  margin: 1px;
   padding: 5% 10%;
   gap: 5%;
-  background-color: #0c3c68;
 }
 
 footer .menu-a,
@@ -518,8 +519,8 @@ footer div p {
 footer .wave {
   position: relative;
   z-index: 1;
-  background-color: #0c3c68;
 }
+
 footer .wave--bottom {
   bottom: 0;
   -webkit-transform: rotate(180deg);
@@ -531,6 +532,7 @@ footer .block-b {
   display: flex;
   align-items: center;
   padding: 50px 10.41%;
+  background-color: whitesmoke;
 }
 
 footer h5 {
@@ -574,5 +576,9 @@ footer .logo {
 
   .language {
     margin-left: 50%;
+  }
+
+  footer .block-a {
+    margin-top: -1%;
   }
 }
