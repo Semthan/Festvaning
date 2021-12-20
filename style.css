@@ -553,4 +553,18 @@ footer .logo {
     position: absolute;
     bottom: 11%;
   }
+
+  .second-header h2 {
+    margin: 60px 0px 0px;
+    font-size: 3.625rem;
+    max-width: 950px;
+  }
+
+  .content-block-a .sub-header {
+    margin: 60px 0;
+    font-size: 1.6rem;
+    max-width: 870px;
+    font-weight: 300;
+    line-height: 1.5;
+  }
 }
