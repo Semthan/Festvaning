@@ -51,6 +51,166 @@ header h1 {
   grid-row-end: 4;
 }
 
+.l_s {
+  display: flex;
+}
+
+.language .flag {
+  display: block;
+  border-radius: 10px;
+  float: left;
+  margin: 1px 8px 0 0;
+  width: 20px;
+  height: 20px;
+}
+
+input,
+ul.language-menu,
+.search-field-container {
+  display: none;
+}
+
+.language label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.language label:hover {
+  opacity: 0.8;
+}
+
+input:checked ~ ul.language-menu {
+  display: block;
+  position: absolute;
+  list-style: none;
+  background-color: #0c3c68;
+  border-radius: 16px;
+  top: 75px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 15px 35px -15px rgba(50, 60, 76, 0.35);
+  box-shadow: 0 15px 35px -15px rgba(50, 60, 76, 0.35);
+  -webkit-transform: translateY(-10px);
+  transform: translateY(-10px);
+  -webkit-transition: opacity 0.2s ease-in-out,
+    -webkit-transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out;
+  transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out,
+    -webkit-transform 0.15s ease-in-out;
+}
+
+.language-menu li a {
+  display: block;
+  color: whitesmoke;
+  font-size: 1.25rem;
+  padding: 8px 10px 6px;
+  line-height: 1.5;
+  margin-left: -40px;
+  text-decoration: none;
+}
+
+.language-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sv-flag {
+  background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/sweden_flag.svg")
+    no-repeat -3px center/cover;
+}
+
+.en-flag {
+  background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/uk_flag.svg")
+    no-repeat -3px center/cover;
+}
+
+.fi-flag {
+  background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/suomi_flag.svg")
+    no-repeat -3px center/cover;
+}
+
+.ru-flag {
+  background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/russia_flag.svg")
+    no-repeat -3px center/cover;
+}
+
+.divider {
+  font-size: 1.5rem;
+  display: inline-block;
+  margin: 0 10px;
+  width: 1px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.search {
+  position: relative;
+  z-index: 3;
+  display: inline-block;
+  vertical-align: text-top;
+  padding: 10px 0px 10px 10px;
+  transition: opacity 0.15s ease-in-out;
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.search > span {
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+span.search-icon {
+  background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/icons/Search.svg")
+    no-repeat;
+  float: left;
+  margin: -10px 4px 0 0;
+  filter: invert(1);
+}
+
+input:checked ~ div.search-field-container {
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #8cc8dc;
+}
+
+.search-field {
+  margin: 35vh 0;
+}
+
+.search-field > form {
+  padding: 0 75px;
+  max-width: 870px;
+  margin: 0 auto;
+}
+
+.search-field > form > label {
+  display: block;
+  margin: 0 0 16px 0;
+  font-size: 2.5rem;
+  line-height: 1.1;
+}
+
+input.search-input {
+  width: 80%;
+  margin: 0;
+  height: 48px;
+  vertical-align: bottom;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid rgba(12, 60, 104, 0.3);
+  outline: 0;
+  color: #0c3c68;
+  font-size: 1.375rem;
+}
+
 svg {
   display: block;
   position: absolute;
@@ -132,9 +292,6 @@ svg {
   flex-direction: column;
   align-items: center;
   text-align: center;
-}
-
-.content-block-a .second-header {
 }
 
 .second-header h2 {

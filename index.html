@@ -19,7 +19,49 @@
 				<a href="https://www.junibacken.se/upplev/barnbokhandel/">Barnbokhandeln</a>
 				<a href="https://www.junibacken.se/festvaning/" aria-current="page">Festvåning</a>				
 			</nav>
-			<p>List & search</p>
+			<div class="l_s">
+				<div class="language">
+					<input id="check01" type="checkbox" name="menu" />
+					<label for="check01">
+						<span class="flag sv-flag"></span>
+						Svenska
+					</label>
+					<ul class="language-menu">
+						<li>
+							<a href="https://www.junibacken.se/en/" >
+								<span class="flag en-flag"></span>
+								English
+							</a>
+						</li>
+						<li>
+							<a href="https://www.junibacken.se/fi/" >
+								<span class="flag fi-flag"></span>
+								Suomi
+							</a>
+						</li>
+						<li>
+							<a href="https://www.junibacken.se/ru/" >
+								<span class="flag ru-flag"></span>
+								Русский
+							</a>
+						</li>
+					</ul>
+				</div>
+				<span class="divider"></span>
+				<input id="check02" type="checkbox" name="menu" />
+				<label for="check02" class="search">
+					<span class="search-icon"></span>
+				</label>
+				<div class="search-field-container">
+					<div class="searh-field">
+						<form method="get" data-site-search-form="" action="https://www.junibacken.se/" role="search">
+							<label for="site-search">Sök</label>
+							<input class="search-input" type="text" id="site-search" name="s" placeholder="Sök här..">
+							<button class="btn btn--blue btn--large" aria-label="Sök webbplatsens innehåll">Sök</button>
+						</form>
+					</div>
+				</div>
+			</div>
 			<div>
 				<a href="https://www.junibacken.se/" rel="home">Junibacken</a>
 				<span>/</span>
