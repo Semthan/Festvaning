@@ -17,6 +17,10 @@ header {
 	background-image: url("./images/header.jpg");
 }
 
+header .logo img {
+	width: 150px;
+}
+
 .main-nav {
 	display: none;
 	grid-column-start: 2;
@@ -754,8 +758,6 @@ footer .logo {
 	}
 
 	svg {
-		display: block;
-		position: absolute;
 		bottom: 12%;
 	}
 
@@ -798,5 +800,11 @@ footer .logo {
 
 	.block-a .contacts h5 {
 		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	.main-nav {
+		display: block;
 	}
 }
