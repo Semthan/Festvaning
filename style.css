@@ -963,4 +963,17 @@ footer .logo {
 	.color-teaser__content > p {
 		font-size: 1.375rem;
 	}
+
+	.content-block-b h2 {
+		font-size: 5rem;
+	}
+
+	.content-block-b h3 {
+		margin-bottom: 24px;
+		font-size: 3rem;
+	}
+
+	.content-block-b p {
+		font-size: 1.375rem;
+	}
 }
