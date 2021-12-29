@@ -382,7 +382,7 @@ svg {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-	padding: 0 6.25%;
+	padding: 20px;
 }
 
 .column {
@@ -848,6 +848,14 @@ footer .logo {
 
 	.second-header {
 		max-width: 580px;
+	}
+
+	.column-container {
+		padding: 0 6.25%;
+	}
+
+	.color-teaser__content {
+		padding: 50px 32px;
 	}
 }
 
