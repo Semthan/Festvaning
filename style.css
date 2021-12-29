@@ -11,10 +11,43 @@ header {
 	padding: 2% 0;
 	color: whitesmoke;
 	text-align: center;
+	color: white;
+	/* 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-image: url("./images/header.jpg"); */
+}
+
+.post-header-with-image__image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-image: url("./images/header.jpg");
+	background-image: url("https://www.junibacken.se/wp-content/uploads/2020/01/fv_cirkus-1024x561.jpg");
+}
+
+.post-header-with-image__overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: -o-linear-gradient(
+		top,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 0, 0, 0) 50%,
+		rgba(0, 0, 0, 0.6) 100%
+	);
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0.6) 0%,
+		rgba(0, 0, 0, 0) 50%,
+		rgba(0, 0, 0, 0.6) 100%
+	);
 }
 
 header .logo img {
@@ -754,6 +787,12 @@ footer footer .social-media a {
 footer .logo {
 	width: 150px;
 	margin: 0 0 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+	.post-header-with-image__image {
+		background-image: url(https://www.junibacken.se/wp-content/uploads/2020/01/fv_cirkus.jpg);
+	}
 }
 
 @media only screen and (min-width: 1025px) {
