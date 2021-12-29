@@ -56,11 +56,6 @@ header {
 	);
 }
 
-header .logo {
-	padding: 50px;
-	margin: 0 auto 0 2.2%;
-}
-
 header .logo img {
 	position: relative;
 	width: 150px;
@@ -86,60 +81,6 @@ header .logo img {
 .main-nav a:hover {
 	width: 100%;
 	border-bottom: 1px solid white;
-}
-
-header h1 {
-	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 3;
-	grid-row-end: 3;
-	margin: auto;
-	position: relative;
-	line-height: 1.1;
-	font-weight: 600;
-	font-size: 2.375rem;
-	font-family: "Albra-Semi";
-}
-
-.sub-nav {
-	display: none;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	grid-row-start: 4;
-	grid-row-end: 4;
-	margin: 30px 0 0 0;
-	font-size: 0;
-}
-
-.sub-nav a {
-	position: relative;
-	display: inline-block;
-	font-size: 1.125rem;
-	letter-spacing: 0.3;
-	font-weight: bolder;
-	color: #fff;
-	text-decoration: none;
-}
-
-.sub-nav a + a {
-	margin: 0 0 0 32px;
-}
-
-.sub-nav a:after {
-	content: "";
-	display: block;
-	margin: auto;
-	height: 2px;
-	width: 0px;
-	background: transparent;
-	-webkit-transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	-o-transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
-	transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
-}
-
-.sub-nav a:hover::after {
-	width: 100%;
-	background: #fff;
 }
 
 .l_s {
@@ -230,6 +171,7 @@ input:checked ~ ul.language-menu {
 .divider {
 	font-size: 1.5rem;
 	display: inline-block;
+	position: relative;
 	margin: 0 10px;
 	width: 1px;
 	height: 20px;
@@ -338,6 +280,60 @@ input.search-input {
 .current-nav .divider_2 {
 	margin: 0 5px;
 	opacity: 0.7;
+}
+
+header h1 {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 3;
+	grid-row-end: 3;
+	margin: auto;
+	position: relative;
+	line-height: 1.1;
+	font-weight: 600;
+	font-size: 2.375rem;
+	font-family: "Albra-Semi";
+}
+
+.sub-nav {
+	display: none;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 4;
+	grid-row-end: 4;
+	margin: 30px 0 0 0;
+	font-size: 0;
+}
+
+.sub-nav a {
+	position: relative;
+	display: inline-block;
+	font-size: 1.125rem;
+	letter-spacing: 0.3;
+	font-weight: bolder;
+	color: #fff;
+	text-decoration: none;
+}
+
+.sub-nav a + a {
+	margin: 0 0 0 32px;
+}
+
+.sub-nav a:after {
+	content: "";
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	-webkit-transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-o-transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.sub-nav a:hover::after {
+	width: 100%;
+	background: #fff;
 }
 
 svg {
@@ -814,23 +810,36 @@ footer .logo {
 
 @media only screen and (min-width: 767px) {
 	header {
+		grid-template-columns: 20% 55% 25%;
+		grid-template-rows: 10% 30% 40% 20%;
 		margin: 0 0 80px;
 		height: 85vh;
 		min-height: 500px;
 	}
 
+	.post-header-with-image__image {
+		background-image: url(https://www.junibacken.se/wp-content/uploads/2020/01/fv_cirkus.jpg);
+	}
+
+	header .logo {
+		padding: 50px;
+		margin: 0 auto 0 2.2%;
+	}
+
 	header h1 {
+		margin: 150px 0;
 		font-size: 3.375rem;
+	}
+
+	.l_s {
+		margin: auto;
 	}
 
 	.current-nav {
 		display: block;
 		position: relative;
+		padding: 50px 0;
 		margin: 0 0 0 2.2%;
-	}
-
-	.post-header-with-image__image {
-		background-image: url(https://www.junibacken.se/wp-content/uploads/2020/01/fv_cirkus.jpg);
 	}
 
 	svg {
