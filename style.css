@@ -857,6 +857,11 @@ footer .logo {
 	.color-teaser__content {
 		padding: 50px 32px;
 	}
+
+	.content-block-b a {
+		width: 50%;
+		text-decoration: none;
+	}
 }
 
 @media only screen and (min-width: 1025px) {
