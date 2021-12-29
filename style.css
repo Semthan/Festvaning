@@ -877,6 +877,10 @@ footer .logo {
 	.block-a .contacts h5 {
 		font-size: 1.5rem;
 	}
+
+	.content-block-b h2 {
+		font-size: 3.625rem;
+	}
 }
 
 @media only screen and (min-width: 1500px) {
@@ -927,7 +931,7 @@ footer .logo {
 	}
 
 	.content-block-b h2 {
-		font-size: 3.625rem;
+		font-size: 4.5rem;
 	}
 }
 
