@@ -11,14 +11,14 @@ header {
 	position: relative;
 	height: 80vh;
 	min-height: 350px;
-	padding-top: 100px;
 	margin: 0 0 40px;
+	text-align: center;
+	color: white;
 	/* 	width: 100%;
 	height: 80vh;
 	padding: 2% 0;
 	color: whitesmoke;
 	text-align: center; */
-	color: white;
 	/* 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -56,6 +56,11 @@ header {
 	);
 }
 
+header .logo {
+	padding: 50px;
+	margin: 0 auto 0 2.2%;
+}
+
 header .logo img {
 	position: relative;
 	width: 150px;
@@ -63,6 +68,8 @@ header .logo img {
 
 .main-nav {
 	display: none;
+	padding: 50px;
+	position: relative;
 	grid-column-start: 2;
 	grid-column-end: 3;
 }
@@ -88,10 +95,9 @@ header h1 {
 	grid-row-end: 3;
 	margin: auto;
 	position: relative;
-	font-size: 2.375rem;
 	line-height: 1.1;
-	color: whitesmoke;
 	font-weight: 600;
+	font-size: 2.375rem;
 	font-family: "Albra-Semi";
 }
 
@@ -138,6 +144,7 @@ header h1 {
 
 .l_s {
 	display: flex;
+	padding: 50px 0;
 	grid-column-start: 3;
 	grid-column-end: 3;
 }
@@ -808,16 +815,18 @@ footer .logo {
 @media only screen and (min-width: 767px) {
 	header {
 		margin: 0 0 80px;
-		height: 72vh;
+		height: 85vh;
 		min-height: 500px;
+	}
+
+	header h1 {
+		font-size: 3.375rem;
 	}
 
 	.current-nav {
 		display: block;
 		position: relative;
 		margin: 0 0 0 2.2%;
-		font-size: 0;
-		z-index: 1;
 	}
 
 	.post-header-with-image__image {
