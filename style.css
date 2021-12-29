@@ -933,6 +933,10 @@ footer .logo {
 	.content-block-b h2 {
 		font-size: 4.5rem;
 	}
+
+	footer .block-b h5 {
+		font-size: 1.75rem;
+	}
 }
 
 @media only screen and (min-width: 1920px) {
@@ -983,7 +987,6 @@ footer .logo {
 	}
 
 	footer .block-b h5 {
-		color: black;
 		font-size: 2rem;
 	}
 }
