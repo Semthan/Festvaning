@@ -2,18 +2,268 @@
 	margin: 0;
 }
 
-header {
-	display: grid;
-	grid-template-columns: 15% 65% 20%;
-	grid-template-rows: 10% 30% 40% 20%;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
+.site-header {
+	position: absolute;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	width: 100%;
+	left: 0;
+	top: 0;
+	height: 60px;
+	z-index: 5;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.site-header__overlay {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	background-color: #0c3c68;
+	height: 100vh;
+	-webkit-transform: translateY(-100vh);
+	-ms-transform: translateY(-100vh);
+	transform: translateY(-100vh);
+}
+
+.site-header-logo {
+	z-index: 1;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
+	margin: 0 auto 0 2.2%;
+}
+
+.site-header-logo a {
+	display: block;
+	font-size: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.site-header-logo img {
+	width: 150px;
+}
+
+.extra-nav {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 auto;
+	flex: 0 0 auto;
 	position: relative;
-	height: 80vh;
-	min-height: 350px;
-	margin: 0 0 40px;
-	text-align: center;
-	color: white;
+	margin: -3px 16px 0 0;
+	right: 0;
+	height: 40px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.extra-nav .language-picker {
+	display: none;
+}
+
+.extra-nav .language-picker a {
+	color: #fff;
+	font-size: 0.875rem;
+	font-weight: 400;
+	-webkit-transition: opacity 0.15s ease-in-out;
+	-o-transition: opacity 0.15s ease-in-out;
+	transition: opacity 0.15s ease-in-out;
+}
+
+.extra-nav .language-picker__dropdown li a {
+	padding: 6px 10px 6px;
+	display: block;
+	-webkit-transition: background-color 0.15s ease-in-out;
+	-o-transition: background-color 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.extra-nav .language-picker__dropdown li:first-child a {
+	padding: 8px 10px 6px;
+}
+
+.extra-nav .language-picker .flag {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	border-radius: 10px;
+	float: left;
+	margin: 1px 8px 0 0;
+}
+
+.extra-nav .language-picker .flag--sv {
+	background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/sweden_flag.svg")
+		no-repeat -3px center/cover;
+}
+
+.extra-nav .language-picker .flag--en-gb {
+	background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/uk_flag.svg")
+		no-repeat center center/cover;
+}
+
+.extra-nav .language-picker__dropdown {
+	position: absolute;
+	list-style: none;
+	background-color: #0c3c68;
+	border-radius: 16px;
+	top: -9999px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 15px 35px -15px rgb(50 60 76 / 35%);
+	box-shadow: 0 15px 35px -15px rgb(50 60 76 / 35%);
+	opacity: 0;
+	-webkit-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
+	-webkit-transition: opacity 0.2s ease-in-out,
+		-webkit-transform 0.15s ease-in-out;
+	transition: opacity 0.2s ease-in-out, -webkit-transform 0.15s ease-in-out;
+	-o-transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out;
+	transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out;
+	transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out,
+		-webkit-transform 0.15s ease-in-out;
+}
+
+p,
+li,
+.paragraph {
+	font-size: 1.125rem;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+.extra-nav .language-picker a {
+	color: #fff;
+	font-size: 0.875rem;
+	font-weight: 400;
+	-webkit-transition: opacity 0.15s ease-in-out;
+	-o-transition: opacity 0.15s ease-in-out;
+	transition: opacity 0.15s ease-in-out;
+}
+
+.extra-nav .language-picker__dropdown li a {
+	padding: 6px 10px 6px;
+	display: block;
+	-webkit-transition: background-color 0.15s ease-in-out;
+	-o-transition: background-color 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.extra-nav .language-picker__dropdown li:first-child a {
+	padding: 8px 10px 6px;
+}
+
+.extra-nav .vertical-seperator {
+	display: none;
+	margin: 0 10px;
+	width: 1px;
+	height: 20px;
+	background-color: #fff;
+	vertical-align: text-top;
+}
+
+.extra-nav .search-module {
+	display: inline-block;
+}
+
+button,
+[role="button"] {
+	cursor: pointer;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
+}
+
+button,
+select {
+	text-transform: none;
+}
+
+button,
+input {
+	overflow: visible;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
+}
+
+.extra-nav .search-module__icon {
+	position: relative;
+	z-index: 3;
+	display: inline-block;
+	vertical-align: text-top;
+	padding: 10px 0px 10px 10px;
+	-webkit-transition: opacity 0.15s ease-in-out;
+	-o-transition: opacity 0.15s ease-in-out;
+	transition: opacity 0.15s ease-in-out;
+	border: 0;
+	background: none;
+	outline: none;
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+}
+
+.icon--invert {
+	-webkit-filter: invert(1);
+	filter: invert(1);
+}
+
+.icon--left {
+	float: left;
+	margin: -1px 4px 0 0;
+}
+
+.icon--search {
+	background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/icons/Search.svg")
+		no-repeat;
+}
+
+.extra-nav .search-module__icon span.icon {
+	-webkit-transition: -webkit-transform 0.15s ease-in-out;
+	transition: -webkit-transform 0.15s ease-in-out;
+	-o-transition: transform 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+}
+
+.extra-nav .search-module__container {
+	display: none;
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	background-color: #8cc8dc;
 }
 
 .post-header-with-image__image {
@@ -800,12 +1050,20 @@ footer .logo {
 }
 
 @media only screen and (min-width: 767px) {
-	header {
-		grid-template-columns: 20% 55% 25%;
-		grid-template-rows: 10% 30% 40% 20%;
-		margin: 0 0 80px;
-		height: 85vh;
-		min-height: 500px;
+	.site-header {
+		height: 100px;
+	}
+
+	.extra-nav {
+		margin: 0 calc(2.2% + 23px) 0 0;
+	}
+
+	.extra-nav .language-picker {
+		display: block;
+	}
+
+	.extra-nav .vertical-seperator {
+		display: inline-block;
 	}
 
 	.post-header-with-image__image {
