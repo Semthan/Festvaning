@@ -2,14 +2,146 @@
 	margin: 0;
 }
 
-body {
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/* body {
 	-webkit-font-smoothing: antialiased;
 	font-size: 16px;
 	color: #000;
 	font-family: "Roboto", sans-serif;
+} */
+
+/* html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.heading-jumbo,
+.heading-large,
+.heading-small,
+.post-content .gform_wrapper .gform_title,
+.heading-small-medium,
+.heading-smaller,
+.medium-large-heading,
+.gform_confirmation_message h1,
+.gform_confirmation_message h2,
+.gform_confirmation_message h3,
+.gform_confirmation_message h4,
+.gform_confirmation_message h5,
+.gform_confirmation_message h6,
+.heading-mini,
+.heading,
+.footer-nav-menu > li > a,
+.news-letter .gform_wrapper .gform_title {
+	font-family: "Albra-Semi";
+	/* 	font-weight: normal; */
+	line-height: 1.1;
 }
 
-header {
+header,
+main,
+article {
 	display: block;
 }
 
@@ -269,19 +401,8 @@ article {
 	opacity: 0.7;
 }
 
-.post-header-with-image {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: column;
-	flex-direction: column;
-	position: relative;
-	height: 80vh;
-	min-height: 350px;
-	padding-top: 100px;
-	margin: 0 0 40px;
+.post-header-with-image__image {
+	background-image: url("https://www.junibacken.se/wp-content/uploads/2020/01/fv_cirkus-1024x561.jpg");
 }
 
 .post-header-with-image__image {
@@ -1140,10 +1261,6 @@ footer .logo {
 		min-height: 500px;
 	}
 
-	.post-header-with-image__image {
-		background-image: url("https://www.junibacken.se/wp-content/uploads/2020/01/fv_cirkus.jpg");
-	}
-
 	.post-header-with-image__curve--desktop {
 		display: block;
 	}
@@ -1186,9 +1303,14 @@ footer .logo {
 }
 
 @media only screen and (min-width: 1025px) {
+	.post-header-with-image__content__wrapper {
+		max-width: 512px;
+	}
+
 	.second-header {
 		padding: 0 75px;
 	}
+
 	.second-header h2 {
 		font-size: 2.375;
 	}
