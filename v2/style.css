@@ -512,6 +512,43 @@ article {
 	color: #fff;
 }
 
+.submenu {
+	margin: 30px 0 0 0;
+	font-size: 0;
+	text-align: center;
+	display: none;
+}
+
+.submenu a {
+	position: relative;
+	display: inline-block;
+	font-size: 1.125rem;
+	letter-spacing: 0.3;
+	font-weight: bold;
+	color: #fff;
+}
+
+.submenu a:after {
+	content: "";
+	display: block;
+	margin: auto;
+	height: 2px;
+	width: 0px;
+	background: transparent;
+	-webkit-transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	-o-transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+	transition: width 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.submenu a:hover:after {
+	width: 100%;
+	background: #fff;
+}
+
+.submenu a + a {
+	margin: 0 0 0 32px;
+}
+
 /* header .logo img {
 	position: relative;
 	width: 150px;
@@ -1369,7 +1406,7 @@ footer .logo {
 		font-size: 4.5rem;
 	}
 
-	.sub-nav {
+	.submenu {
 		display: block;
 	}
 
