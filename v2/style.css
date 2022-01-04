@@ -16,7 +16,7 @@
 	font-family: "Roboto", sans-serif;
 } */
 
-/* html,
+html,
 body,
 div,
 span,
@@ -100,10 +100,8 @@ video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
-} */
+}
 
 h1,
 .h1,
@@ -260,6 +258,61 @@ li,
 	display: none;
 }
 
+.language-picker input,
+.language-picker__dropdown {
+	display: none;
+}
+
+.extra-nav .language-picker__toggle {
+	padding: 13px 10px 14px;
+	display: inline-block;
+}
+
+.extra-nav .language-picker__toggle--current {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-appearance: none;
+	outline: none;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	font-family: "Roboto", sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.5;
+	cursor: pointer;
+	opacity: 1;
+	-webkit-transition: -webkit-transform 0.15s ease-in-out;
+	transition: -webkit-transform 0.15s ease-in-out;
+	-o-transition: transform 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+}
+
+input:checked ~ .language-picker__dropdown {
+	display: block;
+	position: absolute;
+	list-style: none;
+	opacity: 1;
+	background-color: #0c3c68;
+	border-radius: 16px;
+	overflow: hidden;
+	-webkit-box-shadow: 0 15px 35px -15px rgb(50 60 76 / 35%);
+	box-shadow: 0 15px 35px -15px rgb(50 60 76 / 35%);
+	-webkit-transform: translateY(-10px);
+	-ms-transform: translateY(-10px);
+	transform: translateY(-10px);
+	-webkit-transition: opacity 0.2s ease-in-out,
+		-webkit-transform 0.15s ease-in-out;
+	transition: opacity 0.2s ease-in-out, -webkit-transform 0.15s ease-in-out;
+	-o-transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out;
+	transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out;
+	transition: transform 0.15s ease-in-out, opacity 0.2s ease-in-out,
+		-webkit-transform 0.15s ease-in-out;
+}
+
 .extra-nav .language-picker .flag {
 	display: inline-block;
 	width: 16px;
@@ -274,10 +327,45 @@ li,
 		no-repeat -3px center/cover;
 }
 
-/* .extra-nav .language-picker .flag--en-gb {
+.extra-nav .language-picker a {
+	color: #fff;
+	font-size: 0.875rem;
+	font-weight: 400;
+	-webkit-transition: opacity 0.15s ease-in-out;
+	-o-transition: opacity 0.15s ease-in-out;
+	transition: opacity 0.15s ease-in-out;
+}
+
+.extra-nav .language-picker__dropdown li a {
+	padding: 6px 10px 6px;
+	display: block;
+	-webkit-transition: background-color 0.15s ease-in-out;
+	-o-transition: background-color 0.15s ease-in-out;
+	transition: background-color 0.15s ease-in-out;
+}
+
+.extra-nav .language-picker__dropdown li a:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.extra-nav .language-picker__dropdown li:first-child a {
+	padding: 8px 10px 6px;
+}
+
+.flag--en-gb {
 	background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/uk_flag.svg")
-		no-repeat center center/cover;
-} */
+		no-repeat -3px center/cover;
+}
+
+.flag--fi {
+	background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/suomi_flag.svg")
+		no-repeat -3px center/cover;
+}
+
+.flag--ru {
+	background: url("https://www.junibacken.se/wp-content/themes/bz-junibacken/assets/images/flags/russia_flag.svg")
+		no-repeat -3px center/cover;
+}
 
 p,
 li,
@@ -298,39 +386,6 @@ li,
 
 .extra-nav .search-module {
 	display: inline-block;
-}
-
-button,
-[role="button"] {
-	cursor: pointer;
-}
-
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-	-webkit-appearance: button;
-}
-
-button,
-select {
-	text-transform: none;
-}
-
-button,
-input {
-	overflow: visible;
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-	font-family: inherit;
-	font-size: 100%;
-	line-height: 1.15;
-	margin: 0;
 }
 
 .extra-nav .search-module__icon {
@@ -1354,10 +1409,6 @@ footer .logo {
 		font-size: 3.375rem;
 	}
 
-	.l_s {
-		margin: auto;
-	}
-
 	.current-nav {
 		display: block;
 		position: relative;
@@ -1461,6 +1512,15 @@ footer .logo {
 
 	.main-nav {
 		margin: 0;
+	}
+
+	.extra-nav .language-picker a {
+		font-size: 1rem;
+	}
+
+	.extra-nav .language-picker .flag {
+		width: 20px;
+		height: 20px;
 	}
 
 	.sub-nav {
@@ -1608,6 +1668,10 @@ footer .logo {
 	li,
 	.paragraph {
 		font-size: 1.25rem;
+	}
+
+	.extra-nav {
+		margin: 0 calc(5.2% + 23px) 0 0;
 	}
 
 	.breadcrumbs {
