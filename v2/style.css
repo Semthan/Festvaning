@@ -629,9 +629,6 @@ article {
 
 .second-header h2 {
 	font-size: 2.375rem;
-	line-height: 1.1;
-	font-family: "Albra-Semi";
-	font-weight: bolder;
 }
 
 .content-block-a .sub-header {
@@ -1185,7 +1182,7 @@ footer .logo {
 	}
 
 	.second-header h2 {
-		font-size: 3.7rem;
+		font-size: 3.125rem;
 	}
 
 	.column-container {
@@ -1252,7 +1249,7 @@ footer .logo {
 
 	.second-header h2 {
 		margin: 60px 0px -60px;
-		font-size: 4.1rem;
+		font-size: 3.625rem;
 	}
 
 	.color-teaser-container {
@@ -1474,7 +1471,7 @@ footer .logo {
 	}
 
 	.second-header {
-		max-width: 1300px;
+		max-width: 1350px;
 	}
 
 	.second-header h2 {
