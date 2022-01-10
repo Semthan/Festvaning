@@ -883,13 +883,6 @@ a {
 	opacity: 1;
 }
 
-/* footer {
-	display: block;
-	color: whitesmoke;
-	border: 1px solid black;
-	background-color: #0c3c68;
-} */
-
 footer .block-a {
 	position: relative;
 	background-color: #0c3c68;
@@ -1027,17 +1020,27 @@ footer button {
 	border-radius: 24px;
 	font-size: 1.125rem;
 	line-height: 1.35;
+	font-family: "Albra-Semi";
 	text-align: center;
 	white-space: normal;
 	cursor: pointer;
 	border: none;
 	background-color: #f5e093;
+	-webkit-transition: -webkit-transform 0.15s ease-in-out;
+	transition: -webkit-transform 0.15s ease-in-out;
+	-o-transition: transform 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out;
+	transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
 
 footer button:hover {
 	-webkit-transform: scale(0.96, 0.96);
 	-ms-transform: scale(0.96, 0.96);
 	transform: scale(0.96, 0.96);
+}
+
+footer button:hover::after {
+	opacity: 1;
 }
 
 footer div p {
